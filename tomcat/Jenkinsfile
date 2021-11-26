@@ -35,7 +35,7 @@ pipeline{
 
             bat """
                 copy %buildLocation%  %tomcatWebLocation%
-                bat %tomcatBinLocation%\\startup.bat
+                %tomcatBinLocation%\\startup.bat
             """
 
         }
